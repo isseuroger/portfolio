@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Issateuw Diouf Roger</title>
+  <style>
+    /* Reset simple */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    /* À propos */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+    }
+
+    .btn-cv {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #721D15;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn-cv:hover {
+      background-color: #a42b21;
+    }
+
+    .about-image {
+      flex: 0 0 200px;
+    }
+
+    .about-image img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #721D15; /* couleur du bouton CV */
+      object-fit: cover;
+    }
+
+    /* Compétences et projets */
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #ecf0f1;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    /* Formulaire */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background-color: #1a252f;
+    }
+
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* Responsive mobile */
+    @media (max-width: 700px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-image {
+        margin: auto;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Issateuw Diouf Roger</h1>
+  <p>Consultante en stratégie de communication | Web marketing | Design</p>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#experience">Expériences</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- À propos -->
+<section id="about" class="about">
+  <h2>À propos</h2>
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+         Professionnelle de la communication digitale, titulaire d’une licence en communication des entreprises et certifiée en marketing numérique et en référent digital. Je souhaite élargir mes compétences en me formant aux fondamentaux du développement web
+ pour mieux alier stratégie, design et technique.
+      </p>
+      <a href="MonCV.pdf" download class="btn-cv">Télécharger mon CV</a>
+    </div>
+    <div class="about-image">
+      <img src="Photoprofil.png" alt="Photo de profil">
+    </div>
+  </div>
+</section>
+
+<!-- Compétences -->
+<section id="skills">
+  <h2>Compétences</h2>
+  <div class="skills">
+    <div class="card">InDesign</div>
+    <div class="card">Illustrator</div>
+    <div class="card">Canva</div>
+    <div class="card">Design Web</div>
+    <div class="card">Bureautique & Outils collaboratifs</div>
+    <div class="card">Prise de parole / Voix off</div>
+    <div class="card">Gestion de projet agile</div>
+    <div class="card">Design graphique</div>
+  </div>
+</section>
+
+
+<!-- Expériences -->
+<section id="experience">
+  <h2>Expériences professionnelles</h2>
+  <ul>
+    <li>
+      <strong>Consultante - Social Media Manager</strong> – SICA GROUP (depuis août 2023) | En ligne
+      <ul>
+        <li>Rédaction de stratégie de communication</li>
+        <li>Création de contenu</li>
+        <li>Gestion de site web</li>
+        <li>Gestion de communauté en ligne</li>
+        <li>Gestion de campagne publicitaire online</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Stagiaire - Département communication</strong> – Montpelier Business School Dakar (MBS-DAKAR) (Novembre 2023 à Février 2024) | Route des Almadies
+      <ul>
+        <li>Audit de la communication interne de l’école</li>
+        <li>Audit de la présence digitale</li>
+        <li>Gestion du community management de l’école</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Stagiaire - Département communication</strong> – NEGOMÉDIA CONSEIL (NMC) (Mai 2023 à Août 2023) | Cité Keur Gorgui
+      <ul>
+        <li>Élaboration de stratégies de communication</li>
+        <li>Rédaction de calendriers éditoriaux</li>
+        <li>Planification des publications et suivi</li>
+        <li>Gestion du poste d’accueil, appels et courriers</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Stagiaire en Community Management</strong> – Compagnie Prestige Immobilier (CPI) (Octobre 2022 à Avril 2023) | Ngor
+      <ul>
+        <li>Élaboration de stratégies de communication digitale mensuelles</li>
+        <li>Assistance au département marketing et communication</li>
+        <li>Veille digitale et gestion de campagnes digitales</li>
+        <li>Planification des publications et gestion des interactions</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Responsable communication</strong> – Maison de beauté You And Me (Octobre 2021 à Février 2022) | En ligne
+      <ul>
+        <li>Élaboration de la stratégie de communication et marketing</li>
+        <li>Création et gestion du compte Google Business</li>
+        <li>Planification, publication et suivi des publications et sponsoring</li>
+        <li>Veille sur les foires et événements</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+
+<!-- Projets -->
+<section id="projects">
+  <h2>Projets</h2>
+  <p>Je n'ai pas encore publié de projets sur ce portfolio, mais vous pouvez consulter mes réalisations sur mon <a href="https://bento.me/issateuwdioufroger" target="_blank">Bento</a>.</p>
+</section>
+
+
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Votre nom" required>
+    <input type="email" id="email" placeholder="Votre email" required>
+    <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Issateuw Diouf Roger | Tous droits réservés</p>
+</footer>
+
+<script>
+  // Validation simple du formulaire
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+      alert("Merci de remplir tous les champs !");
+    } else {
+      alert("Merci " + name + ", votre message a bien été envoyé !");
+      this.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
